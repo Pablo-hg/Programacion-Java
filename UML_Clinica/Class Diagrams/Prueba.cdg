@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Prueba">
+  <ClassDiagramComponents>
+    <Class name="Vehiculo" package="" visibility="public" xPosition="139.0" yPosition="305.0">
+      <Fields>
+        <Field name="marca" type="String" visibility="private"/>
+        <Field name="modelo" type="String" visibility="private"/>
+        <Field name="matricula" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Vehiculo" returnType="String" visibility="public">
+          <Argument type="String" name="m"/>
+          <Argument type="String" name="mod"/>
+          <Argument type="String" name="mar"/>
+        </Method>
+        <Method name="getMarca" returnType="String" visibility="public"/>
+        <Method name="getMOdelo" returnType="String" visibility="public"/>
+        <Method name="getMatricula" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Coche" package="" visibility="public" xPosition="594.0" yPosition="305.0">
+      <Fields>
+        <Field name="z" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="suma" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Interface name="Comparable" package="" visibility="public" xPosition="629.0" yPosition="585.0">
+      <Methods/>
+    </Interface>
+    <Class name="Administrador" package="" visibility="public" xPosition="248.0" yPosition="97.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Taller" package="" visibility="public" xPosition="571.0" yPosition="97.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Coche" target="Vehiculo"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Coche" target="Comparable"/>
+    <HasRelation name="administrador" source="Taller" target="Administrador" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="vehiculos" source="Taller" target="Vehiculo" type="Default" sourceCardinality="0..1" targetCardinality="0..*" collectionType="ArrayList"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="clinica">
+  <ClassDiagramComponents>
+    <Class name="Clinica" package="clinica" visibility="public" xPosition="110.0" yPosition="218.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Eco" package="clinica" visibility="public" xPosition="965.0" yPosition="630.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Prueba" package="clinica" visibility="public" xPosition="572.0" yPosition="233.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="RayosX" package="clinica" visibility="public" xPosition="511.0" yPosition="630.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="RM" package="clinica" visibility="public" xPosition="228.0" yPosition="630.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Tac" package="clinica" visibility="public" xPosition="730.0" yPosition="630.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Interface name="Recurso" package="clinica" visibility="public" xPosition="353.0" yPosition="233.0">
+      <Methods/>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="clinica.RayosX" target="clinica.Prueba"/>
+    <IsRelation name="is" source="clinica.Tac" target="clinica.Prueba"/>
+    <IsRelation name="is" source="clinica.Eco" target="clinica.Prueba"/>
+    <IsRelation name="is" source="clinica.RM" target="clinica.Prueba"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
